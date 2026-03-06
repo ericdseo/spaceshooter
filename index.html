@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Space Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game-container">
+      <canvas id="gameCanvas" width="200" height="300"></canvas>
+      <div id="ui-layer">
+        <div id="top-bar">
+          <div id="score-display">Score: <span id="score">0</span></div>
+          <div id="stats-display" style="gap: 10px; display: flex">
+            <div style="color: #0af">SPD:<span id="lvl-speed">1</span></div>
+            <div style="color: #0f0">FIRE:<span id="lvl-fire">1</span></div>
+            <div style="color: #f00">DMG:<span id="lvl-dmg">1</span></div>
+          </div>
+        </div>
+
+        <div id="game-over" class="hidden">
+          <h1>Game Over</h1>
+          <button id="btn-restart">Restart</button>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
